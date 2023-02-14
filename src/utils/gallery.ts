@@ -7,17 +7,17 @@ export const GALLERY = [
   },
   {
     id: 2,
-    title: "Oneiroscapes",
+    title: "Planet",
     img: "2.jpg",
   },
   {
     id: 3,
-    title: "Oneiroscapes",
+    title: "Town",
     img: "3.jpg",
   },
   {
     id: 4,
-    title: "Oneiroscapes",
+    title: "Paiting",
     img: "4.jpg",
   },
   {

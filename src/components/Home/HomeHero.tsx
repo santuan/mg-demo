@@ -3,15 +3,32 @@ import Image from "next/image";
 // Import Swiper styles
 import "swiper/css";
 import { GALLERY } from "@/utils/gallery";
+import "swiper/css/navigation";
+
+import { Pagination } from "swiper";
+import { Navigation } from "swiper";
 
 export default function HomeHero() {
   return (
     <div className="relative z-10 w-full min-h-[70vh] md:min-h-screen border-b border-gray-200">
-      <div className="px-2 mx-auto max-w-screen-2xl">
-        <h1 className="text-3xl leading-normal lg:text-[96px] leading-[112px] my-6">
+      <div className="w-full px-2 ">
+        <h1 className="text-3xl leading-normal lg:text-[96px] max-w-screen-2xl mx-auto lg:leading-[112px] my-6">
           A new generation of <span className="text-[#808080]">art.</span>
         </h1>
-        <Swiper spaceBetween={50} slidesPerView={1}>
+        <Swiper
+          spaceBetween={50}
+          centeredSlides={true}
+          slidesPerView={1}
+          loop={true}
+          navigation={true}
+          modules={[Navigation]}
+          breakpoints={{
+            640: {
+              slidesPerView: 2,
+              spaceBetween: 20,
+            },
+          }}
+        >
           {GALLERY.map((i) => (
             <SwiperSlide key={i.id}>
               <div className="">
@@ -27,7 +44,7 @@ export default function HomeHero() {
                     src={`/assets/${i.img}`}
                   />
                 </div>
-                <div className="flex justify-between w-full mt-12">
+                <div className="flex justify-between w-full mt-12 slide-item-inview">
                   <span className="px-3 py-2 text-sm bg-gray-100">
                     Featured drop
                   </span>
@@ -65,7 +82,7 @@ export default function HomeHero() {
                     </svg>
                   </span>
                 </div>
-                <h2 className="my-6 text-3xl">Oneiroscapes</h2>
+                <h2 className="my-6 text-3xl slide-item-inview">Oneiroscapes</h2>
               </div>
             </SwiperSlide>
           ))}
