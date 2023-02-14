@@ -14,7 +14,7 @@ export default function Offcanvas() {
   );
 
   return (
-    <Menu width={240} right isOpen={openMenu} onStateChange={handleStateChange}>
+    <Menu width={260} right isOpen={openMenu} onStateChange={handleStateChange}>
       <Navigation closeMenu={closeMenu} />
       <div className="absolute bottom-0 right-0 m-6">
         <ConnectWalletButton />

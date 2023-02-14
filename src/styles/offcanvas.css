@@ -103,7 +103,7 @@
 
 /* General sidebar styles */
 .bm-menu {
-  @apply p-3 bg-gray-700 shadow-sm;
+  @apply p-3 bg-zinc-900 shadow-sm;
 }
 
 /* Morph shape necessary with bubble or elastic */
