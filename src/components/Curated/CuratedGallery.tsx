@@ -6,7 +6,7 @@ import { GALLERY } from "@/utils/gallery";
 
 export default function CuratedGallery() {
   return (
-    <div className="px-2">
+    <div className="px-6">
       <OurDropsFilter />
       <div className={styles.gallery}>
         {GALLERY.map((i) => (

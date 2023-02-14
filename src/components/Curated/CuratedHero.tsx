@@ -1,10 +1,10 @@
 export default function CuratedHero() {
   return (
     <div
-      className="w-full min-h-screen bg-no-repeat "
+      className="w-full pb-32 mb-24 bg-no-repeat "
       style={{ backgroundImage: "url('/assets/curated-back.jpg')", backgroundSize: "50vw", backgroundPosition: "top right" }}
     >
-      <div className="grid w-full grid-cols-2 gap-6 px-6 mx-auto max-w-screen-2xl">
+      <div className="grid w-full gap-6 px-2 mx-auto md:grid-cols-2 max-w-screen-2xl">
         <div className="grid w-full mt-16">
           <span className="text-sm uppercase text-[#920d3d]">CURATED</span>
           <h1 className="mt-6 text-3xl lg:text-7xl">
@@ -14,8 +14,8 @@ export default function CuratedHero() {
             Mirage Gallery was founded on the premise that art can be more than
             human.
           </p>
-          <div className="grid max-w-xl grid-cols-2 gap-3">
-            <input type="text" className="px-3 text-gray-800 bg-gray-100" placeholder="Become a curated artist"/>
+          <div className="grid max-w-xl gap-3 sm:grid-cols-2">
+            <input type="text" className="p-3 text-gray-800 bg-gray-100" placeholder="Become a curated artist"/>
             <button type="button" className="bg-[#920d3d] flex justify-center items-center text-white py-3">
               Mint
               <svg

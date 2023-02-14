@@ -1,6 +1,6 @@
 export default function OurDropsFilter() {
   return (
-    <div className="grid w-full grid-cols-2 mx-auto my-3 max-w-screen-2xl">
+    <div className="grid w-full mx-auto my-3 md:grid-cols-2 max-w-screen-2xl">
       <h2 className="text-2xl text-left">Our Drops</h2>
       <div className="flex items-center justify-end gap-3">
         <button type="button" className="btn">
