@@ -1,5 +1,5 @@
 .title {
-  @apply text-gray-900 text-3xl md:text-7xl font-medium;
+  @apply text-gray-900 text-3xl md:text-5xl font-medium;
 }
 
 .subtitle {

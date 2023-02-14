@@ -1,4 +1,5 @@
 import HomeHero from "@/components/Home/HomeHero";
+import HomeCuratedImages from "@/components/Home/HomeCuratedImages";
 import HomeOurDrops from "@/components/Home/HomeOurDrops";
 import HeroTitle from "@/components/ui/HeroTitle";
 import Link from "next/link";
@@ -9,7 +10,7 @@ export default function Home() {
       <HomeHero />
       <HomeOurDrops />
       <div className="w-full px-2 space-y-64 max-w-screen-2xl">
-        <section>
+        <section className="pt-64">
           <HeroTitle subtitle="What is Mirage?" accentColor={""}>
             Mirage Gallery was founded on the premise that art can be
             <span className="text-[#808080]"> more than human.</span>
@@ -20,7 +21,7 @@ export default function Home() {
             subtitle="ALEJANDRO & TAYLOR"
             accentColor={"text-[#074f65]"}
           >
-            Mirage Gallery started with creating entirely
+            Mirage Gallery started with creating entirely{" "}
             <span className="text-[#074f65] underline">
               A.I. generated artists.
             </span>
@@ -43,6 +44,11 @@ export default function Home() {
             Instead of just trading the same JPEG back and forth, you only get
             to own a unique step in the 10 phases of evolution for a piece.
           </p>
+          <div className="relative">
+            <div className="absolute top-0 bottom-0 left-0 w-96 bg-gradient-to-r from-white via-white/30 to-transparent" />
+            <div className="absolute top-0 bottom-0 right-0 w-96 bg-gradient-to-l from-white via-white/30 to-transparent" />
+            <HomeCuratedImages />
+          </div>
           <div className="flex items-center justify-start mt-6">
             <Link
               href="/crypto-native"
@@ -78,6 +84,11 @@ export default function Home() {
             Mirage Gallery Curated is building an astounding collection of A.I.
             from artists around the world.
           </p>
+          <div className="relative">
+            <div className="absolute top-0 bottom-0 left-0 w-96 bg-gradient-to-r from-white via-white/30 to-transparent" />
+            <div className="absolute top-0 bottom-0 right-0 w-96 bg-gradient-to-l from-white via-white/30 to-transparent" />
+            <HomeCuratedImages />
+          </div>
           <div className="flex items-center justify-start mt-6">
             <Link
               href="/curated"
@@ -110,6 +121,11 @@ export default function Home() {
             Each Dreamer is the combination of traditional fine-art, machine
             learning, and collectibles.
           </p>
+          <div className="relative">
+            <div className="absolute top-0 bottom-0 left-0 w-96 bg-gradient-to-r from-white via-white/30 to-transparent" />
+            <div className="absolute top-0 bottom-0 right-0 w-96 bg-gradient-to-l from-white via-white/30 to-transparent" />
+            <HomeCuratedImages />
+          </div>
           <div className="flex items-center justify-start mt-6">
             <Link
               href="/dreamers"

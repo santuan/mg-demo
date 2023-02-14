@@ -21,13 +21,14 @@ export default function DreamersHero() {
           <div className="grid max-w-xl grid-cols-2 gap-3">
             <button
               type="button"
-              className="flex items-center justify-center py-3 text-black bg-gray-200"
+              className="flex items-center justify-center py-3 text-black duration-300 bg-gray-200 hover:bg-gray-100"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="22"
                 height="20"
                 fill="none"
+                className="mr-2"
               >
                 <path
                   fill="#000"

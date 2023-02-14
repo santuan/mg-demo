@@ -5,8 +5,7 @@ module.exports = {
   ],
   theme: {
     fontFamily: {
-      logo: ['Poppins', 'sans'],
-      base: ['Courier New', 'mono'],
+      base: ['Unbounded', 'mono'],
     },
     extend: {},
   },
