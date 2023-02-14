@@ -1,15 +1,8 @@
 import Link from "next/link";
 import styles from "./OffcanvasNavigation.module.css";
-import { FunctionComponent, ReactElement } from "react";
 import { ROUTES } from "@/utils/routes";
 
-interface IProps {
-  closeMenu: () => void;
-}
-
-const OffcanvasNavigation: FunctionComponent<IProps> = ({
-  closeMenu,
-}): ReactElement => (
+const Navigation = ({ closeMenu }: any) => (
   <nav className={styles.root}>
     {ROUTES.map((route) => {
       return (
@@ -28,4 +21,4 @@ const OffcanvasNavigation: FunctionComponent<IProps> = ({
   </nav>
 );
 
-export default OffcanvasNavigation;
+export default Navigation;
