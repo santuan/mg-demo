@@ -4,10 +4,10 @@ export default function CuratedHero() {
       className="w-full min-h-screen bg-no-repeat "
       style={{ backgroundImage: "url('/assets/curated-back.jpg')", backgroundSize: "50vw", backgroundPosition: "top right" }}
     >
-      <div className="grid w-full grid-cols-2 gap-6 px-2 mx-auto max-w-screen-2xl">
+      <div className="grid w-full grid-cols-2 gap-6 px-6 mx-auto max-w-screen-2xl">
         <div className="grid w-full mt-16">
           <span className="text-sm uppercase text-[#920d3d]">CURATED</span>
-          <h1 className="text-7xl">
+          <h1 className="mt-6 text-7xl">
             Innovative AI artwork, <span className="text-[#920d3d]">from a variety of artists.</span>
           </h1>
           <p className="py-4">

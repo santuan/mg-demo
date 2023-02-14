@@ -82,7 +82,7 @@ export default function HomeHero() {
                     </svg>
                   </span>
                 </div>
-                <h2 className="my-6 text-3xl slide-item-inview">Oneiroscapes</h2>
+                <h2 className="my-6 text-3xl slide-item-inview">{i.title}</h2>
               </div>
             </SwiperSlide>
           ))}
