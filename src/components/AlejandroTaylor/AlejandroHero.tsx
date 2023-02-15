@@ -1,24 +1,23 @@
-export default function DreamersHero() {
+import Image from "next/image";
+
+export default function AlejandroHero() {
   return (
-    <div
-      className="w-full pb-64 bg-no-repeat "
-      style={{
-        backgroundImage: "url('/assets/back-dreamers.jpg')",
-        backgroundSize: "50vw",
-        backgroundPosition: "top right",
-      }}
-    >
-      <div className="grid w-full grid-cols-2 gap-6 px-6 mx-auto max-w-screen-2xl">
-        <div className="grid w-full mt-16">
-          <span className="text-sm uppercase text-[#1129aa]">DREAMERS</span>
-          <h1 className="mt-6 text-3xl lg:text-7xl">
-            The artistic intersection of humans and artificial intelligence.
-          </h1>
-          <p className="py-4">
-            Mirage Gallery was founded on the premise that art can be more than
-            human.
-          </p>
-          <div className="flex justify-start">
+    <>
+      <div className="w-full h-[500px]">
+        <Image
+          src="/assets/alejandrotaylor/back-alejandro.jpg"
+          alt="imagen"
+          width={1600}
+          height={600}
+          className="object-cover w-full h-[500px]"
+        />
+      </div>
+      <div className="px-2 mx-auto md:px-2 max-w-screen-2xl">
+        <div className="flex items-center justify-between my-6">
+          <span className="flex items-center justify-center bg-[#f1fbfe] text-xs px-3 py-2 rounded-full text-[#074f65]">
+            Alejandro & Taylor
+          </span>
+          <div className="grid max-w-xl gap-3 sm:grid-cols-2">
             <button
               type="button"
               className="flex items-center justify-center py-3 text-black duration-300 bg-gray-200 px-9 hover:bg-gray-100"
@@ -41,9 +40,57 @@ export default function DreamersHero() {
               </svg>
               View on Opensea
             </button>
+            <button
+              type="button"
+              className="bg-[#074f65] flex justify-center items-center text-white py-3"
+            >
+              Dashboard
+              <svg
+                width="14"
+                height="10"
+                viewBox="0 0 14 10"
+                className="ml-2"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M12.8333 4.99992H1.16663"
+                  stroke="white"
+                  strokeWidth="1.5"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                />
+                <path
+                  d="M8.66663 9.16667L12.8333 5"
+                  stroke="white"
+                  strokeWidth="1.5"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                />
+                <path
+                  d="M8.66663 0.833252L12.8333 4.99992"
+                  stroke="white"
+                  strokeWidth="1.5"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                />
+              </svg>
+            </button>
           </div>
         </div>
+        <h2 className="text-3xl">Meet Alejandro</h2>
+        <p className="my-6">
+          Alejandro is a realist visual artist born in Panama in 1974. He
+          painted landscapes during his adolescence and received his formal arts
+          education in Panama, Barcelona and New York City. Since 2001, he has
+          held over 25 exhibitions of his paintings throughout the US and
+          Europe. His work has appeared in numerous publications as well.
+        </p>
+        <p>
+          [This bio was created entirely with A.I. and is not factually
+          accurate]
+        </p>{" "}
       </div>
-    </div>
+    </>
   );
 }

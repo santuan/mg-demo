@@ -1,8 +1,8 @@
 export default function CuratedHero() {
   return (
     <div
-      className="w-full pb-32 mb-24 bg-no-repeat "
-      style={{ backgroundImage: "url('/assets/curated-back.jpg')", backgroundSize: "50vw", backgroundPosition: "top right" }}
+      className="w-full pt-32 pb-32 mb-24 bg-no-repeat md:pt-0 "
+      style={{ backgroundImage: "url('/assets/back-curated.jpg')", backgroundSize: "50vw", backgroundPosition: "top right" }}
     >
       <div className="grid w-full gap-6 px-2 mx-auto md:grid-cols-2 max-w-screen-2xl">
         <div className="grid w-full mt-16">

@@ -1,24 +1,26 @@
-export default function DreamersHero() {
+export default function HeroCryptoNative() {
   return (
     <div
       className="w-full pb-64 bg-no-repeat "
       style={{
-        backgroundImage: "url('/assets/back-dreamers.jpg')",
+        backgroundImage: "url('/assets/back-crypto-native.jpg')",
         backgroundSize: "50vw",
         backgroundPosition: "top right",
       }}
     >
       <div className="grid w-full grid-cols-2 gap-6 px-6 mx-auto max-w-screen-2xl">
         <div className="grid w-full mt-16">
-          <span className="text-sm uppercase text-[#1129aa]">DREAMERS</span>
+          <span className="text-sm uppercase text-[#431281]">
+            CRYPTO-NATIVE
+          </span>
           <h1 className="mt-6 text-3xl lg:text-7xl">
-            The artistic intersection of humans and artificial intelligence.
+            A digital artist, evolving with each sale
           </h1>
           <p className="py-4">
             Mirage Gallery was founded on the premise that art can be more than
             human.
           </p>
-          <div className="flex justify-start">
+          <div className="grid max-w-xl gap-3 sm:grid-cols-2">
             <button
               type="button"
               className="flex items-center justify-center py-3 text-black duration-300 bg-gray-200 px-9 hover:bg-gray-100"
@@ -40,6 +42,42 @@ export default function DreamersHero() {
                 />
               </svg>
               View on Opensea
+            </button>
+            <button
+              type="button"
+              className="bg-[#431281] flex justify-center items-center text-white py-3"
+            >
+              Dashboard
+              <svg
+                width="14"
+                height="10"
+                viewBox="0 0 14 10"
+                className="ml-2"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M12.8333 4.99992H1.16663"
+                  stroke="white"
+                  strokeWidth="1.5"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                />
+                <path
+                  d="M8.66663 9.16667L12.8333 5"
+                  stroke="white"
+                  strokeWidth="1.5"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                />
+                <path
+                  d="M8.66663 0.833252L12.8333 4.99992"
+                  stroke="white"
+                  strokeWidth="1.5"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                />
+              </svg>
             </button>
           </div>
         </div>

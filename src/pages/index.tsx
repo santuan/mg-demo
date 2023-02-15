@@ -22,9 +22,9 @@ export default function Home() {
             accentColor={"text-[#074f65]"}
           >
             Mirage Gallery started with creating entirely{" "}
-            <span className="text-[#074f65] underline">
-              A.I. generated artists.
-            </span>
+            <Link href="//alejandro-and-taylor" className="text-[#074f65] underline">
+            A.I. generated artists.
+            </Link>
           </HeroTitle>
           <p className="mx-auto text-lg text-gray-600 md:text-3xl ">
             Each part of the artists below - from their artwork to their

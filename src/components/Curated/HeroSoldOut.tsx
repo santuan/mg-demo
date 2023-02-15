@@ -1,24 +1,53 @@
-export default function DreamersHero() {
+import Image from "next/image";
+
+export default function HeroSoldOut() {
   return (
-    <div
-      className="w-full pb-64 bg-no-repeat "
-      style={{
-        backgroundImage: "url('/assets/back-dreamers.jpg')",
-        backgroundSize: "50vw",
-        backgroundPosition: "top right",
-      }}
-    >
-      <div className="grid w-full grid-cols-2 gap-6 px-6 mx-auto max-w-screen-2xl">
-        <div className="grid w-full mt-16">
-          <span className="text-sm uppercase text-[#1129aa]">DREAMERS</span>
-          <h1 className="mt-6 text-3xl lg:text-7xl">
-            The artistic intersection of humans and artificial intelligence.
-          </h1>
-          <p className="py-4">
-            Mirage Gallery was founded on the premise that art can be more than
-            human.
-          </p>
-          <div className="flex justify-start">
+    <>
+      <div className="w-full h-[500px]">
+        <div className="relative">
+          <div className="absolute top-0 bottom-0 left-0 w-32 md:w-[500px] bg-gradient-to-r from-white via-white/30 to-transparent" />
+          <div className="absolute top-0 bottom-0 right-0 w-32 md:w-[500px] bg-gradient-to-l from-white via-white/30 to-transparent" />
+          <Image
+            src="/assets/11.jpg"
+            alt="imagen"
+            width={1600}
+            height={600}
+            className="object-cover w-full h-[500px]"
+          />
+        </div>
+      </div>
+      <div className="px-2 mx-auto md:px-2 max-w-screen-2xl">
+        <div className="flex items-center justify-between my-6">
+          <span className="flex items-center justify-center px-3 py-2 text-xs text-black bg-gray-200 rounded-full">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              className="mr-2"
+              fill="none"
+            >
+              <path
+                stroke="#000"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M9.666 2.167C9.667 1.246 7.801.5 5.501.5s-4.165.747-4.167 1.667c0 .92 1.865 1.666 4.167 1.666 2.301 0 4.166-.746 4.166-1.666M9.667 2.167v6.466M1.334 5.5c0 .92 1.865 1.667 4.167 1.667 2.301 0 4.166-.746 4.166-1.667M14.402 9.098a3.75 3.75 0 1 1-5.306 5.304 3.75 3.75 0 0 1 5.306-5.304"
+              />
+              <path
+                stroke="#000"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M8.42 10.02c-.751.297-1.782.48-2.92.48-2.301 0-4.166-.746-4.166-1.667"
+              />
+              <path
+                stroke="#000"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M8.371 13.37c-.747.286-1.755.463-2.87.463-2.301 0-4.166-.745-4.167-1.666v-10"
+              />
+            </svg>
+            Sold out
+          </span>
+          <div className="flex justify-end">
             <button
               type="button"
               className="flex items-center justify-center py-3 text-black duration-300 bg-gray-200 px-9 hover:bg-gray-100"
@@ -43,7 +72,15 @@ export default function DreamersHero() {
             </button>
           </div>
         </div>
+        <h2 className="text-3xl">Oneiroscapes</h2>
+        <p className="w-1/2 my-6">
+          Dreams are the realm of possibility, a space in which we can explore
+          our innermost imaginations. Through dreams, we can access boundless
+          creativity, magical realms and fantastical journeys, allowing us to
+          escape the boundaries of our waking lives. Venture beyond the
+          boundaries of reality and explore the world of oneironautics.
+        </p>
       </div>
-    </div>
+    </>
   );
 }
