@@ -73,7 +73,7 @@ export default function HeroSoldOut() {
           </div>
         </div>
         <h2 className="text-3xl">Oneiroscapes</h2>
-        <p className="w-1/2 my-6">
+        <p className="my-6 md:w-1/2">
           Dreams are the realm of possibility, a space in which we can explore
           our innermost imaginations. Through dreams, we can access boundless
           creativity, magical realms and fantastical journeys, allowing us to

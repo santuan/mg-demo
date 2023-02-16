@@ -1,11 +1,11 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 import Image from "next/image";
-// Import Swiper styles
+import Link from "next/link";
+
 import "swiper/css";
 import { GALLERY } from "@/utils/gallery";
 import "swiper/css/navigation";
 
-import { Pagination } from "swiper";
 import { Navigation } from "swiper";
 
 export default function HomeHero() {
@@ -48,7 +48,10 @@ export default function HomeHero() {
                   <span className="px-3 py-2 text-sm bg-gray-100">
                     Featured drop
                   </span>
-                  <span className="flex items-center justify-center px-3 py-2 text-white bg-black">
+                  <Link
+                    href="/curated/oneiroscapes"
+                    className="flex items-center justify-center px-3 py-2 text-white bg-black hover:bg-zinc-800"
+                  >
                     View drop
                     <svg
                       width="16"
@@ -80,7 +83,7 @@ export default function HomeHero() {
                         strokeLinejoin="round"
                       />
                     </svg>
-                  </span>
+                  </Link>
                 </div>
                 <h2 className="my-6 text-3xl slide-item-inview">{i.title}</h2>
               </div>

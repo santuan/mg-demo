@@ -1,14 +1,13 @@
 export default function HeroCryptoNative() {
   return (
-    <div
-      className="w-full pb-64 bg-no-repeat "
-      style={{
-        backgroundImage: "url('/assets/back-crypto-native.jpg')",
-        backgroundSize: "50vw",
-        backgroundPosition: "top right",
-      }}
-    >
-      <div className="grid w-full grid-cols-2 gap-6 px-6 mx-auto max-w-screen-2xl">
+    <div className="w-full pb-64">
+      {/* eslint-disable-next-line @next/next/no-img-element */}
+      <img
+        src="/assets/back-crypto-native.jpg"
+        alt="golis"
+        className="absolute top-0 right-0 z-0 animate__animated animate__slower animate__fadeIn"
+      />
+      <div className="relative z-10 grid w-full grid-cols-2 gap-6 px-6 mx-auto max-w-screen-2xl">
         <div className="grid w-full mt-16">
           <span className="text-sm uppercase text-[#431281]">
             CRYPTO-NATIVE

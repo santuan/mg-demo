@@ -1,61 +1,17 @@
-import AlejandroHero from "@/components/AlejandroTaylor/AlejandroHero";
 import HeroSoldOut from "@/components/Curated/HeroSoldOut";
-import Image from "next/image";
-import Link from "next/link";
+import SingleCuratedFilters from "@/components/Curated/SingleCurated/CuratedFilters";
+import FullWidthVideoModal from "@/components/ui/FullWidthVideoModal";
+
 export default function SoldOutPagePage() {
   return (
     <div className="w-full pb-24">
       <HeroSoldOut />
-      <div className="my-20 border-b border-gray-300">
-        <div className="flex items-center justify-start gap-12 px-2 py-3 mx-auto max-w-screen-2xl">
-          <Link
-           href="/curated/oneiroscapes" className="text-[#920d3d]">
-            About the project
-          </Link>
-          <Link href="" className="text-[#808080]">The artist</Link>
-          <Link href="" className="text-[#808080]">Sentient claim </Link>
-        </div>
-      </div>
+      <SingleCuratedFilters />
       <div className="px-2 mx-auto max-w-screen-2xl">
         <div className="grid w-full mx-auto my-3 md:grid-cols-2 max-w-screen-2xl">
           <h2 className="text-2xl text-left">About the project</h2>
         </div>
-        <div className="h-[500px] overflow-hidden my-6 relative">
-          <div className="absolute inset-0 flex items-center justify-center bg-gray-900/60">
-            <div className="w-20 h-20 duration-300 cursor-pointer hover:scale-110">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="78"
-                height="78"
-                fill="none"
-              >
-                <path
-                  stroke="#fff"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M76.5 39v0c0 20.712-16.788 37.5-37.5 37.5v0C18.288 76.5 1.5 59.712 1.5 39v0C1.5 18.288 18.288 1.5 39 1.5v0c20.712 0 37.5 16.788 37.5 37.5Z"
-                  clip-rule="evenodd"
-                />
-                <path
-                  stroke="#fff"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="m34.586 26.742 16.175 9.567c2.046 1.208 2.046 4.17 0 5.379l-16.175 9.566c-2.084 1.234-4.717-.27-4.717-2.691v-19.13c0-2.42 2.633-3.924 4.717-2.691v0Z"
-                  clip-rule="evenodd"
-                />
-              </svg>
-            </div>
-          </div>
-          <Image
-            src="/assets/2.jpg"
-            alt="imagen"
-            width={1200}
-            height={500}
-            className="object-cover w-full"
-          />
-        </div>
+        <FullWidthVideoModal/>
         <p className="max-w-6xl mr-auto">
           The Oneiroscapes collection explores the realm of dreams through a
           collaboration between an artist and an AI. Transcribed for your
