@@ -15,7 +15,9 @@ export default function CuratedHero() {
             human.
           </p>
           <div className="grid max-w-xl gap-3 sm:grid-cols-2">
-            <input type="text" className="p-3 text-gray-800 bg-gray-100" placeholder="Become a curated artist"/>
+            <a href="#become-curated-artist" className="p-3 text-center text-gray-800 bg-gray-100">
+              Become a curated artist
+            </a>
             <button type="button" className="bg-[#920d3d] flex justify-center items-center text-white py-3">
               Mint
               <svg
